@@ -44,7 +44,7 @@ def main():
 
     if len(sys.argv) == 1:
         p.print_help()
-        exit()
+        sys.exit()
 
     opts = p.parse_args()
     es = es2csv.Es2csv(opts)
